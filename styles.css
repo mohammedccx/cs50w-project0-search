@@ -93,3 +93,84 @@
     color: #202124;
     background-color: #f8f9fa;
 }
+/* 1. إعدادات الصفحة العامة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. القائمة العلوية والروابط */
+.n {
+    text-align: right;
+    padding: 20px;
+}
+
+.k {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #1a0dab;
+    font-size: 14px;
+}
+
+/* 3. شعار جوجل وكلمة الصور */
+.g {
+    text-align: center;
+    font-size: 55px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.x { color: #4285f4; } 
+.y { color: #ea4335; } 
+.z { color: #fbbc05; } 
+.w { color: #4285f4; } 
+.v { color: #34a853; } 
+.u { color: #ea4335; } 
+
+.i {
+    text-align: center;
+    color: #4285f4;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* 4. صندوق وشريط البحث */
+.b {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: 500px;
+    margin: 30px auto;
+    padding: 10px 15px;
+}
+
+.s {
+    color: #9aa0a6;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.m {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* 5. حاوية الزر والزر نفسه */
+.c {
+    text-align: center;
+}
+
+.t {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
