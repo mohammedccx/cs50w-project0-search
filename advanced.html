@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>week 0 cs50w - Advanced</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- القائمة العلوية للرجوع لصفحة الهوم أو الصور -->
+    <div class="h">
+        <a href="home.html" class="r"> Home</a>
+        <a href="images.html" class="r"> Images</a>
+    </div>
+
+    <!-- عنوان الصفحة الرئيسي باللون الأحمر الخاص بجوجل المتقدم -->
+    <h1 class="d">البحث المتقدم</h1>
+
+    <hr class="l"> <!-- خط أفقي فاصل -->
+
+    <!-- نموذج البحث المتقدم المرتبط برابط جوجل الفعلي -->
+    <form action="https://google.com" method="GET" class="f">
+
+        <!-- الخانة 1: جميع هذه الكلمات -->
+        <div class="p">
+            <label class="o">جميع هذه الكلمات:</label>
+            <input type="text" name="as_q" class="e">
+        </div>
+
+        <!-- الخانة 2: هذه الكلمة أو العبارة بالكامل -->
+        <div class="p">
+            <label class="o">هذه الكلمة أو العبارة بالكامل:</label>
+            <input type="text" name="as_epq" class="e">
+        </div>
+
+        <!-- الخانة 3: أي كلمة من هذه الكلمات -->
+        <div class="p">
+            <label class="o">أي كلمة من هذه الكلمات:</label>
+            <input type="text" name="as_oq" class="e">
+        </div>
+
+        <!-- الخانة 4: لا شيء من هذه الكلمات -->
+        <div class="p">
+            <label class="o">لا شيء من هذه الكلمات:</label>
+            <input type="text" name="as_eq" class="e">
+        </div>
+
+        <!-- حاوية زر البحث المتقدم -->
+        <div class="v">
+            <input type="submit" value="بحث متقدم" class="j">
+        </div>
+
+    </form>
+
+</body>
+</html>
+
+  
