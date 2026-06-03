@@ -1,17 +1,22 @@
-/* التنسيقات العامة وروابط التنقل */
+/* ==========================================================================
+   1. التنسيقات العامة والصفحة الرئيسية (Google Search)
+   ========================================================================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: ltr; /* لضمان توجيه العناصر من اليسار لليمين */
+}
+
 .nav-container {
     text-align: right;
     padding: 20px 30px;
-    font-family: Arial, sans-serif;
 }
 
 .nav-link {
     color: #000;
     text-decoration: none;
     font-size: 13px;
-}
-
-.nav-link:first-child {
     margin-left: 20px;
 }
 
@@ -19,11 +24,10 @@
     text-decoration: underline;
 }
 
-/* شعار جوجل */
+/* شعار جوجل الملون */
 .logo {
     text-align: center;
     margin-top: 70px;
-    font-family: Arial, sans-serif;
     font-size: 60px;
 }
 
@@ -34,7 +38,7 @@
 .l  { color: #34A853; }
 .e  { color: #EA4335; }
 
-/* صندوق البحث */
+/* صندوق شريط البحث */
 .search-box {
     text-align: center;
     margin-top: 30px;
@@ -48,7 +52,6 @@
     padding: 0 15px;
     height: 44px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    direction: ltr;
 }
 
 .search-icon {
@@ -69,11 +72,10 @@
     background: transparent;
 }
 
-/* الأزرار */
+/* الأزرار تحت شريط البحث */
 .buttons-container {
     text-align: center;
     margin-top: 20px;
-    font-family: Arial, sans-serif;
 }
 
 .btn {
@@ -93,14 +95,10 @@
     color: #202124;
     background-color: #f8f9fa;
 }
-/* 1. إعدادات الصفحة العامة */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-/* 2. القائمة العلوية والروابط */
+/* ==========================================================================
+   2. تنسيقات صفحة بحث الصور (Google Images)
+   ========================================================================== */
 .n {
     text-align: right;
     padding: 20px;
@@ -109,11 +107,14 @@ body {
 .k {
     margin-left: 20px;
     text-decoration: none;
-    color: #1a0dab;
+    color: #5f6368;
     font-size: 14px;
 }
 
-/* 3. شعار جوجل وكلمة الصور */
+.k:hover {
+    text-decoration: underline;
+}
+
 .g {
     text-align: center;
     font-size: 55px;
@@ -136,7 +137,6 @@ body {
     margin-top: 5px;
 }
 
-/* 4. صندوق وشريط البحث */
 .b {
     display: flex;
     align-items: center;
@@ -160,23 +160,30 @@ body {
     font-size: 16px;
 }
 
-/* 5. حاوية الزر والزر نفسه */
 .c {
     text-align: center;
 }
 
 .t {
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    color: #3c4043;
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    color: white;
     padding: 10px 20px;
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
 }
-/* 1. القائمة العلوية لصفحة المتقدم */
+
+.t:hover {
+    background-color: #357ae8;
+}
+
+/* ==========================================================================
+   3. تنسيقات صفحة البحث المتقدم (Advanced Search)
+   ========================================================================== */
 .h {
-    text-align: left; /* لجعل زر العودة لصفحة هوم على اليسار */
+    text-align: right; /* زر العودة على اليمين */
     padding: 20px;
 }
 
@@ -186,56 +193,69 @@ body {
     font-size: 14px;
 }
 
-/* 2. عنوان الصفحة والخط الفاصل */
+.r:hover {
+    text-decoration: underline;
+}
+
 .d {
-    color: #d93025; /* لون أحمر هادئ لعنوان البحث المتقدم */
+    color: #d93025; /* اللون الأحمر للعنوان */
     font-size: 20px;
-    margin-right: 40px; /* ترك مسافة من حافة اليمين */
+    margin-left: 40px; 
+    margin-top: 30px;
 }
 
 .l {
     border: 0;
-    border-top: 1px solid #ebebeb; /* خط رمادي خفيف جداً يفصل العنوان عن الخانات */
+    border-top: 1px solid #ebebeb; 
     margin-bottom: 30px;
 }
 
-/* 3. ترتيب خانات الإدخال */
+/* التفاف الأسطر محاذاة لليسار */
 .p {
     display: flex;
-    margin-bottom: 15px; /* مسافة بين كل سطر وسطر */
+    margin-bottom: 15px; 
     align-items: center;
-    padding-right: 40px; /* محاذاة العناصر من اليمين */
+    padding-left: 40px; 
 }
 
-/* الكلمات التوضيحية (Labels) */
+/* الكلمات التوضيحية */
 .o {
-    width: 250px; /* تحديد عرض ثابت لكل النصوص لتصطف الخانات بانتظام */
+    width: 250px; 
     font-size: 14px;
     color: #202124;
+    text-align: left; 
 }
 
-/* مربعات الكتابة (Inputs) */
+/* حقول الإدخال */
 .e {
-    width: 500px; /* عرض خانة الكتابة */
-    height: 25px; /* طول الخانة */
-    border: 1px solid #3079ed; /* إطار أزرق خفيف حول المربعات */
+    width: 500px; 
+    height: 25px; 
+    border: 1px solid #dfe1e5; 
     padding: 2px 5px;
     outline: none;
 }
 
-/* 4. حاوية وزر البحث المتقدم */
+.e:focus {
+    border: 1px solid #4d90fe; 
+}
+
+/* حاوية وزر البحث المتقدم */
 .v {
     margin-top: 30px;
-    padding-right: 290px; /* دفع الزر ليبدأ مع بداية خانات الكتابة تماماً */
+    padding-left: 290px; 
 }
 
 .j {
-    background-color: #4d90fe; /* لون خلفية الزر أزرق مثل جوجل */
-    color: white; /* لون النص داخل الزر أبيض */
+    background-color: #4d90fe; 
+    color: white; 
     border: 1px solid #3079ed;
     padding: 8px 15px;
     font-size: 13px;
     font-weight: bold;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.j:hover {
+    background-color: #357ae8;
 }
