@@ -174,3 +174,68 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+/* 1. القائمة العلوية لصفحة المتقدم */
+.h {
+    text-align: left; /* لجعل زر العودة لصفحة هوم على اليسار */
+    padding: 20px;
+}
+
+.r {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+/* 2. عنوان الصفحة والخط الفاصل */
+.d {
+    color: #d93025; /* لون أحمر هادئ لعنوان البحث المتقدم */
+    font-size: 20px;
+    margin-right: 40px; /* ترك مسافة من حافة اليمين */
+}
+
+.l {
+    border: 0;
+    border-top: 1px solid #ebebeb; /* خط رمادي خفيف جداً يفصل العنوان عن الخانات */
+    margin-bottom: 30px;
+}
+
+/* 3. ترتيب خانات الإدخال */
+.p {
+    display: flex;
+    margin-bottom: 15px; /* مسافة بين كل سطر وسطر */
+    align-items: center;
+    padding-right: 40px; /* محاذاة العناصر من اليمين */
+}
+
+/* الكلمات التوضيحية (Labels) */
+.o {
+    width: 250px; /* تحديد عرض ثابت لكل النصوص لتصطف الخانات بانتظام */
+    font-size: 14px;
+    color: #202124;
+}
+
+/* مربعات الكتابة (Inputs) */
+.e {
+    width: 500px; /* عرض خانة الكتابة */
+    height: 25px; /* طول الخانة */
+    border: 1px solid #3079ed; /* إطار أزرق خفيف حول المربعات */
+    padding: 2px 5px;
+    outline: none;
+}
+
+/* 4. حاوية وزر البحث المتقدم */
+.v {
+    margin-top: 30px;
+    padding-right: 290px; /* دفع الزر ليبدأ مع بداية خانات الكتابة تماماً */
+}
+
+.j {
+    background-color: #4d90fe; /* لون خلفية الزر أزرق مثل جوجل */
+    color: white; /* لون النص داخل الزر أبيض */
+    border: 1px solid #3079ed;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
