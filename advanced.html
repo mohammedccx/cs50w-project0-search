@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>week 0 cs50w - Advanced</title>
+    <title>CS50w - Advanced Search</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- القائمة العلوية للرجوع لصفحة الهوم أو الصور -->
+    <!-- رابط للرجوع للصفحة الرئيسية -->
     <div class="h">
-        <a href="home.html" class="r"> Home</a>
-        <a href="images.html" class="r"> Images</a>
+        <a href="index.html" class="r">Google Search</a>
     </div>
 
-    <!-- عنوان الصفحة الرئيسي باللون الأحمر الخاص بجوجل المتقدم -->
-    <h1 class="d">البحث المتقدم</h1>
+    <!-- عنوان الصفحة الرئيسي -->
+    <h1 class="d">Advanced Search</h1>
 
-    <hr class="l"> <!-- خط أفقي فاصل -->
+    <hr class="l">
 
-    <!-- نموذج البحث المتقدم المرتبط برابط جوجل الفعلي -->
+    <!-- نموذج البحث المتقدم المرتبط بجوجل -->
     <form action="https://google.com" method="GET" class="f">
 
-        <!-- الخانة 1: جميع هذه الكلمات -->
+        <!-- الخانة 1 -->
         <div class="p">
-            <label class="o">جميع هذه الكلمات:</label>
+            <label class="o">all these words:</label>
             <input type="text" name="as_q" class="e">
         </div>
 
-        <!-- الخانة 2: هذه الكلمة أو العبارة بالكامل -->
+        <!-- الخانة 2 -->
         <div class="p">
-            <label class="o">هذه الكلمة أو العبارة بالكامل:</label>
+            <label class="o">this exact word or phrase:</label>
             <input type="text" name="as_epq" class="e">
         </div>
 
-        <!-- الخانة 3: أي كلمة من هذه الكلمات -->
+        <!-- الخانة 3 -->
         <div class="p">
-            <label class="o">أي كلمة من هذه الكلمات:</label>
+            <label class="o">any of these words:</label>
             <input type="text" name="as_oq" class="e">
         </div>
 
-        <!-- الخانة 4: لا شيء من هذه الكلمات -->
+        <!-- الخانة 4 -->
         <div class="p">
-            <label class="o">لا شيء من هذه الكلمات:</label>
+            <label class="o">none of these words:</label>
             <input type="text" name="as_eq" class="e">
         </div>
 
-        <!-- حاوية زر البحث المتقدم -->
+        <!-- زر الإرسال -->
         <div class="v">
-            <input type="submit" value="بحث متقدم" class="j">
+            <input type="submit" value="Advanced Search" class="j">
         </div>
 
     </form>
 
 </body>
 </html>
-
-  
